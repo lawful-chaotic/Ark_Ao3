@@ -1,0 +1,294 @@
+/*ГЛАВНАЯ СТРАНИЦА*/
+
+.latest.news.module .link a,
+.latest.messages.module h3.heading,
+.random.readings.module.odd .link a {
+  visibility: hidden;
+}
+
+/*Заголовки*/
+
+.favorite.module.odd .heading:after {
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  max-height: 1em;
+  background: #ffffff;
+  content: "Поиск в избранном";
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.browse.module.odd:first-child .heading::after {
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  max-height: 1em;
+  background: #ffffff;
+  content: "Найди любимые теги";
+  visibility: visible;
+}
+
+.latest.news.module .title:after {
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  background: #ffffff;
+  max-height: 1em;
+  content: "Новости";
+}
+
+.random.readings.module.odd .title:after {
+  position: absolute;
+  left: 0;
+  background: #ffffff;
+  max-height: 1em;
+  content: "Позже уже настало?";
+}
+
+.latest.messages.module .title:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0.5em;
+  max-height: 1em;
+  content: "Непрочитанные сообщения";
+  visibility: visible;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.social.module.odd .heading:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0.5em;
+  background: #ffffff;
+  max-height: 1em;
+  content: "Подпишитесь";
+}
+
+/*Подзаголовки с ссылками*/
+
+.latest.news.module .link a:after {
+  visibility: visible;
+  position: absolute;
+  right: 0;
+  top: 1.4em;
+  max-height: 1em;
+  background: #ffffff;
+  font-size: 1.1em;
+  content: "Все новости";
+  border-bottom: 1px solid;
+}
+
+.random.readings.module.odd .link a:after {
+  visibility: visible;
+  position: absolute;
+  right: 5px;
+  top: 1.4em;
+  max-height: 1em;
+  background: #ffffff;
+  content: "История";
+  font-size: 1.1em;
+  border-bottom: 1px solid;
+}
+
+.latest.messages.module .link a:after {
+  content: "Входящие";
+  position: absolute;
+  right: 0;
+  top: 1.3em;
+  max-height: 1em;
+  background: #ffffff;
+  font-size: 1.1em;
+  visibility: visible;
+  border-bottom: 1px solid;
+}
+
+/*Абзацы с текстом и др*/
+
+.browse.module.odd ul {
+  padding-top: 0.2em;
+}
+
+.browse.module.odd:first-child .heading + p.note::after {
+  position: absolute;
+  top: 3.4em;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #ffffff;
+  max-height: 3em;
+  content: "Просматривайте фандомы по типу медиа или расположите до 20 любимых тегов в этом разделе!";
+}
+
+.random.readings.module.odd p.note:after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 3.64em;
+  bottom: 0;
+  background: #ffffff;
+  content: "Некоторые работы, помеченные «Прочитать позже»";
+}
+
+.browse.module.odd p.note {
+  padding-bottom: 0.3em;
+}
+
+.latest.messages.module p.note:after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 3.64em;
+  bottom: 0;
+  background: #ffffff;
+  content: "Последние непрочитанные сообщения из входящих.";
+}
+
+/*Главное меню*/
+
+ul.primary.navigation.actions a.dropdown-toggle[href="/menu/fandoms"],
+ul.primary.navigation.actions a.dropdown-toggle[href="/menu/browse"],
+ul.primary.navigation.actions a.dropdown-toggle[href="/menu/search"],
+ul.primary.navigation.actions a.dropdown-toggle[href="/menu/about"] {
+  visibility: hidden;
+}
+
+ul.primary.navigation.actions a.dropdown-toggle[href="/menu/fandoms"] {
+  padding: 0.429em 1.423em 0.429em 0.75em !important;
+}
+
+ul.primary.navigation.actions a.dropdown-toggle[href="/menu/search"] {
+  padding: 0.429em 0.736em !important;
+}
+
+ul.primary.navigation.actions a.dropdown-toggle[href="/menu/browse"] {
+  padding: 0.429em 0.82em !important;
+}
+
+ul.primary.navigation.actions a.dropdown-toggle[href="/menu/about"] {
+  padding: 0.429em 4.65em 0.429em 1.074em !important;
+}
+
+ul.primary.navigation.actions a.dropdown-toggle:after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 1em;
+  font-size: 1.1em;
+  padding: 0.35em 0.682em 0.59em;
+}
+
+ul.primary.navigation.actions a.dropdown-toggle[href="/menu/fandoms"]:after {
+  content: "Фандомы";
+}
+
+ul.primary.navigation.actions a.dropdown-toggle[href="/menu/browse"]:after {
+  content: "Обзор";
+}
+
+ul.primary.navigation.actions a.dropdown-toggle[href="/menu/search"]:after {
+  content: "Поиск";
+}
+
+ul.primary.navigation.actions a.dropdown-toggle[href="/menu/about"]:after {
+  content: "Информация";
+}
+
+ul.primary.navigation.actions a.dropdown-toggle:hover:after,
+ul.primary.navigation.actions a.dropdown-toggle:focus:after,
+ul.primary.navigation.actions .open a.dropdown-toggle:after,
+#header .dropdown:hover a:after {
+  background: #ddd !important;
+}
+
+/*Поиск*/
+
+form.search span.submit.actions:after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  right: 0.1em;
+  /*right: 0.5em;
+  firefox
+  top: 53%;
+    left: 87.5%;
+    transform: translate(-50%, -50%);
+  */
+  background: #eee;
+  color: #444;
+  width: auto;
+  font-size: 100%;
+  line-height: 1.286;
+  padding: 0.25em 0.6em; /*0,75*/
+  background-image: linear-gradient(#fff 2%, #ddd 95%, #bbb 100%);
+  border-radius: 0.25em;
+  box-shadow: none;
+  content: "Поиск";
+}
+
+form.search input.button {
+  padding: 0.25em 0.6em;
+  color: #444;
+}
+
+form.search span.submit.actions:hover:after {
+  visibility: hidden;
+}
+
+/*Меню профиля*/
+
+ul.user.navigation.actions a.dropdown-toggle[href^="/users/"]:after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  content: "Привет, ";
+  margin: 0.25em 0.75em;
+}
+
+a.dropdown-toggle[href^="/users/"] {
+  padding-left: 3.3em !important;
+}
+
+ul.user.navigation.actions a.dropdown-toggle[href^="/works/"]:after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  content: "Публикация";
+  padding: 0.25em 0.75em;
+}
+
+a.dropdown-toggle[href^="/works/"] {
+  padding: 0.25em 2.779em !important;
+}
+
+ul.user.navigation.actions a[rel="nofollow"]:after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  content: "Выйти ";
+  padding: 0.25em 0.75em;
+}
+
+a[rel="nofollow"] {
+  padding: 0.25em 0.338em !important;
+}
+
+#header .actions a:hover:after {
+  color: #900;
+}
+
+#header .actions a:hover:after,
+#header .actions a:focus:after,
+#header .dropdown:hover a:after,
+#header .open a:after {
+  background: #ddd;
+  border-radius: 0.25em;
+}
