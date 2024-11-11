@@ -1,0 +1,144 @@
+.latest.news.module .link a,
+.latest.messages.module h3.heading,
+.random.readings.module.odd .link a {
+  visibility: hidden;
+}
+
+/*Заголовки*/
+
+.favorite.module.odd .heading:after {
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  max-height: 1em;
+  background: #ffffff;
+  content: "Поиск в избранном";
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.browse.module.odd:first-child .heading::after {
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  max-height: 1em;
+  background: #ffffff;
+  content: "Найди любимые теги";
+  visibility: visible;
+}
+
+.latest.news.module .title:after {
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  background: #ffffff;
+  max-height: 1em;
+  content: "Новости";
+}
+
+.random.readings.module.odd .title:after {
+  position: absolute;
+  left: 0;
+  background: #ffffff;
+  max-height: 1em;
+  content: "Позже уже настало?";
+}
+
+.latest.messages.module .title:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0.5em;
+  max-height: 1em;
+  content: "Непрочитанные сообщения";
+  visibility: visible;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.social.module.odd .heading:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0.5em;
+  background: #ffffff;
+  max-height: 1em;
+  content: "Подпишитесь";
+}
+
+/*Подзаголовки с ссылками*/
+
+.latest.news.module .link a:after {
+  visibility: visible;
+  position: absolute;
+  right: 0;
+  top: 1.4em;
+  max-height: 1em;
+  background: #ffffff;
+  font-size: 1.1em;
+  content: "Все новости";
+  border-bottom: 1px solid;
+}
+
+.random.readings.module.odd .link a:after {
+  visibility: visible;
+  position: absolute;
+  right: 5px;
+  top: 1.4em;
+  max-height: 1em;
+  background: #ffffff;
+  content: "История";
+  font-size: 1.1em;
+  border-bottom: 1px solid;
+}
+
+.latest.messages.module .link a:after {
+  content: "Входящие";
+  position: absolute;
+  right: 0;
+  top: 1.3em;
+  max-height: 1em;
+  background: #ffffff;
+  font-size: 1.1em;
+  visibility: visible;
+  border-bottom: 1px solid;
+}
+
+/*Абзацы с текстом и др*/
+
+.browse.module.odd ul {
+  padding-top: 0.2em;
+}
+
+.browse.module.odd:first-child .heading + p.note::after {
+  position: absolute;
+  top: 3.4em;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #ffffff;
+  max-height: 3em;
+  content: "Просматривайте фандомы по типу медиа или расположите до 20 любимых тегов в этом разделе!";
+}
+
+.random.readings.module.odd p.note:after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 3.64em;
+  bottom: 0;
+  background: #ffffff;
+  content: "Некоторые работы, помеченные «Прочитать позже»";
+}
+
+.browse.module.odd p.note {
+  padding-bottom: 0.3em;
+}
+
+.latest.messages.module p.note:after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 3.64em;
+  bottom: 0;
+  background: #ffffff;
+  content: "Последние непрочитанные сообщения из входящих.";
+}
