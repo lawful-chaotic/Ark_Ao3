@@ -1,0 +1,89 @@
+/*Поиск*/
+
+form.search span.submit.actions:after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  right: 0.1em;
+  /*right: 0.5em;
+  firefox
+  top: 53%;
+    left: 87.5%;
+    transform: translate(-50%, -50%);
+  */
+  background: #eee;
+  color: #444;
+  width: auto;
+  font-size: 100%;
+  line-height: 1.286;
+  padding: 0.25em 0.6em; /*0,75*/
+  background-image: linear-gradient(#fff 2%, #ddd 95%, #bbb 100%);
+  border-radius: 0.25em;
+  box-shadow: none;
+  content: "Поиск";
+}
+
+form.search input.button {
+  padding: 0.25em 0.6em;
+  color: #444;
+}
+
+form.search span.submit.actions:hover:after {
+  visibility: hidden;
+}
+
+/*Меню профиля*/
+
+ul.user.navigation.actions a.dropdown-toggle[href^="/users/"]:after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  content: "Привет, ";
+  margin: 0.25em 0.75em;
+}
+
+a.dropdown-toggle[href^="/users/"] {
+  padding-left: 3.3em !important;
+}
+
+ul.user.navigation.actions a.dropdown-toggle[href^="/works/"]:after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  content: "Публикация";
+  padding: 0.25em 0.75em;
+}
+
+a.dropdown-toggle[href^="/works/"] {
+  padding: 0.25em 2.779em !important;
+}
+
+ul.user.navigation.actions a[rel="nofollow"]:after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  content: "Выйти ";
+  padding: 0.25em 0.75em;
+}
+
+a[rel="nofollow"] {
+  padding: 0.25em 0.338em !important;
+}
+
+#header .actions a:hover:after {
+  color: #900;
+}
+
+#header .actions a:hover:after,
+#header .actions a:focus:after,
+#header .dropdown:hover a:after,
+#header .open a:after {
+  background: #ddd;
+  border-radius: 0.25em;
+}
