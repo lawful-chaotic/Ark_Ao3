@@ -2,7 +2,9 @@
 
 .latest.news.module .link a,
 .latest.messages.module h3.heading,
-.random.readings.module.odd .link a {
+.random.readings.module.odd .link a,
+.browse.module.odd p.note,
+.random.readings.module.odd p.note {
   visibility: hidden;
 }
 
@@ -72,7 +74,7 @@
   visibility: visible;
   position: absolute;
   right: 0;
-  top: 1.4em;
+  top: 1.45em;
   max-height: 1em;
   background: #ffffff;
   font-size: 1.1em;
@@ -110,24 +112,28 @@
   padding-top: 0.2em;
 }
 
-.browse.module.odd:first-child .heading + p.note::after {
+.browse.module.odd p.note::after {
   position: absolute;
+  visibility: visible;
   top: 3.4em;
   right: 0;
   left: 0;
   bottom: 0;
-  background: #ffffff;
   max-height: 3em;
   content: "Просматривайте фандомы по типу медиа или расположите до 20 любимых тегов в этом разделе!";
 }
 
+.browse.module.odd p.note {
+  padding-bottom: 0.3em;
+}
+
 .random.readings.module.odd p.note:after {
   position: absolute;
+  visibility: visible;
   right: 0;
   left: 0;
   top: 3.64em;
   bottom: 0;
-  background: #ffffff;
   content: "Некоторые работы, помеченные «Прочитать позже»";
 }
 
@@ -198,8 +204,7 @@ ul.primary.navigation.actions a.dropdown-toggle[href="/menu/about"]:after {
 
 ul.primary.navigation.actions a.dropdown-toggle:hover:after,
 ul.primary.navigation.actions a.dropdown-toggle:focus:after,
-ul.primary.navigation.actions .open a.dropdown-toggle:after,
-#header .dropdown:hover a:after {
+ul.primary.navigation.actions .open a.dropdown-toggle:after {
   background: #ddd !important;
 }
 
@@ -213,15 +218,15 @@ form.search span.submit.actions:after {
   /*right: 0.5em;
   firefox
   top: 53%;
-    left: 87.5%;
-    transform: translate(-50%, -50%);
+  left: 87.5%;
+  transform: translate(-50%, -50%);
   */
   background: #eee;
   color: #444;
   width: auto;
   font-size: 100%;
   line-height: 1.286;
-  padding: 0.25em 0.6em; /*0,75*/
+  padding: 0.25em 0.75em; /*0,6*/
   background-image: linear-gradient(#fff 2%, #ddd 95%, #bbb 100%);
   border-radius: 0.25em;
   box-shadow: none;
@@ -230,7 +235,6 @@ form.search span.submit.actions:after {
 
 form.search input.button {
   padding: 0.25em 0.6em;
-  color: #444;
 }
 
 form.search span.submit.actions:hover:after {
@@ -290,5 +294,182 @@ a[rel="nofollow"] {
 #header .dropdown:hover a:after,
 #header .open a:after {
   background: #ddd;
+}
+
+.user.navigation.actions a:hover:after,
+.user.navigation.actions a:focus:after {
   border-radius: 0.25em;
 }
+
+/*Вложения меню*/
+.menu.dropdown-menu li a {
+  visibility: hidden;
+}
+
+.menu.dropdown-menu li a:after {
+  visibility: visible;
+  background: transparent !important;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 1em;
+  font-size: 1.04em;
+  padding: 0.7em 0.5em 0.7em;
+}
+
+#header .menu li:hover {
+  background: #ddd;
+}
+/*Фандомы*/
+
+.menu.dropdown-menu li a[href="/media"]:after {
+  content: "Все фандомы";
+}
+
+.menu.dropdown-menu li a[href="/media/Anime%20*a*%20Manga/fandoms"]:after {
+  content: "Аниме & Манга";
+}
+
+.menu.dropdown-menu li a[href="/media/Books%20*a*%20Literature/fandoms"]:after {
+  content: "Книги & Литература";
+}
+
+.menu.dropdown-menu
+  li
+  a[href="/media/Cartoons%20*a*%20Comics%20*a*%20Graphic%20Novels/fandoms"] {
+  padding-bottom: 1.7em !important;
+}
+
+.menu.dropdown-menu
+  li
+  a[href="/media/Cartoons%20*a*%20Comics%20*a*%20Graphic%20Novels/fandoms"]:after {
+  content: "Мультфильмы & Комиксы\a & Граф. новеллы";
+  white-space: pre-wrap;
+}
+
+.menu.dropdown-menu
+  li
+  a[href="/media/Celebrities%20*a*%20Real%20People/fandoms"]:after {
+  content: "Знаменитости & Настоящие люди";
+}
+
+.menu.dropdown-menu li a[href="/media/Movies/fandoms"]:after {
+  content: "Фильмы";
+}
+
+.menu.dropdown-menu li a[href="/media/Music%20*a*%20Bands/fandoms"]:after {
+  content: "Музыкальные группы";
+}
+
+.menu.dropdown-menu li a[href="/media/Other%20Media/fandoms"]:after {
+  content: "Другие медиа";
+}
+
+.menu.dropdown-menu li a[href="/media/Theater/fandoms"]:after {
+  content: "Театр";
+}
+
+.menu.dropdown-menu li a[href="/media/TV%20Shows/fandoms"]:after {
+  content: "Сериалы";
+}
+
+.menu.dropdown-menu li a[href="/media/Video%20Games/fandoms"]:after {
+  content: "Видеоигры";
+}
+
+.menu.dropdown-menu li a[href="/media/Uncategorized%20Fandoms/fandoms"]:after {
+  content: "Несортированные фандомы";
+}
+
+/*Обзор и Поиск*/
+
+.menu.dropdown-menu li a[href="/works"]:after {
+  content: "Фанфики";
+}
+
+.menu.dropdown-menu li a[href="/bookmarks"]:after {
+  content: "Закладки";
+}
+
+.menu.dropdown-menu li a[href="/tags"]:after {
+  content: "Теги";
+}
+
+.menu.dropdown-menu li a[href="/collections"]:after {
+  content: "Сборники";
+}
+
+.menu.dropdown-menu li a[href="/works/search"]:after {
+  content: "Фанфики";
+}
+
+.menu.dropdown-menu li a[href="/bookmarks/search"]:after {
+  content: "Закладки";
+}
+
+.menu.dropdown-menu li a[href="/tags/search"]:after {
+  content: "Теги";
+}
+
+.menu.dropdown-menu li a[href="/people/search"]:after {
+  content: "Люди";
+}
+
+/*Информация профиля*/
+.menu.dropdown-menu li a[href="/about"]:after {
+  content: "О нас";
+}
+
+.menu.dropdown-menu li a[href="/admin_posts"]:after {
+  content: "Новости";
+}
+
+.menu.dropdown-menu li a[href="/faq"]:after {
+  content: "FAQ";
+}
+
+.menu.dropdown-menu li a[href="/wrangling_guidelines"]:after {
+  content: "Руководство по правке тегов";
+}
+
+.menu.dropdown-menu li a[href="/donate"]:after {
+  content: "Пожертвования и волонтерство";
+}
+
+.menu.dropdown-menu li a[href^="/users/"]:after {
+  content: "Моя страница";
+}
+
+.menu.dropdown-menu li a[href$="/subscriptions"]:after {
+  content: "Мои подписки";
+}
+
+.menu.dropdown-menu li a[href$="/works"]:after {
+  content: "Мои работы";
+}
+
+.menu.dropdown-menu li a[href$="/bookmarks"]:after {
+  content: "Мои закладки";
+}
+
+.menu.dropdown-menu li a[href$="/collections"]:after {
+  content: "Мои сборники";
+}
+
+.menu.dropdown-menu li a[href$="/readings"]:after {
+  content: "Моя история";
+}
+
+.menu.dropdown-menu li a[href$="/preferences"]:after {
+  content: "Мои предпочтения";
+}
+
+.menu.dropdown-menu li a[href="/works/new"]:after {
+  content: "Новая работа";
+}
+
+.menu.dropdown-menu li a[href="/works/new?import=true"]:after {
+  content: "Импортировать работу";
+}
+
