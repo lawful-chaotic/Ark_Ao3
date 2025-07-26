@@ -1,0 +1,172 @@
+/*Вложения меню*/
+.menu.dropdown-menu li a {
+  visibility: hidden;
+}
+
+.menu.dropdown-menu li a:after {
+  visibility: visible;
+  background: transparent !important;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 1em;
+  font-size: 1.04em;
+  padding: 0.7em 0.5em 0.7em;
+}
+
+#header .menu li:hover {
+  background: #ddd;
+}
+/*Фандомы*/
+
+.menu.dropdown-menu li a[href="/media"]:after {
+  content: "Все фандомы";
+}
+
+.menu.dropdown-menu li a[href="/media/Anime%20*a*%20Manga/fandoms"]:after {
+  content: "Аниме & Манга";
+}
+
+.menu.dropdown-menu li a[href="/media/Books%20*a*%20Literature/fandoms"]:after {
+  content: "Книги & Литература";
+}
+
+.menu.dropdown-menu
+  li
+  a[href="/media/Cartoons%20*a*%20Comics%20*a*%20Graphic%20Novels/fandoms"] {
+  padding-bottom: 1.7em !important;
+}
+
+.menu.dropdown-menu
+  li
+  a[href="/media/Cartoons%20*a*%20Comics%20*a*%20Graphic%20Novels/fandoms"]:after {
+  content: "Мультфильмы & Комиксы\a & Граф. новеллы";
+  white-space: pre-wrap;
+}
+
+.menu.dropdown-menu
+  li
+  a[href="/media/Celebrities%20*a*%20Real%20People/fandoms"]:after {
+  content: "Знаменитости & Настоящие люди";
+}
+
+.menu.dropdown-menu li a[href="/media/Movies/fandoms"]:after {
+  content: "Фильмы";
+}
+
+.menu.dropdown-menu li a[href="/media/Music%20*a*%20Bands/fandoms"]:after {
+  content: "Музыкальные группы";
+}
+
+.menu.dropdown-menu li a[href="/media/Other%20Media/fandoms"]:after {
+  content: "Другие медиа";
+}
+
+.menu.dropdown-menu li a[href="/media/Theater/fandoms"]:after {
+  content: "Театр";
+}
+
+.menu.dropdown-menu li a[href="/media/TV%20Shows/fandoms"]:after {
+  content: "Сериалы";
+}
+
+.menu.dropdown-menu li a[href="/media/Video%20Games/fandoms"]:after {
+  content: "Видеоигры";
+}
+
+.menu.dropdown-menu li a[href="/media/Uncategorized%20Fandoms/fandoms"]:after {
+  content: "Несортированные фандомы";
+}
+
+/*Обзор и Поиск*/
+
+.menu.dropdown-menu li a[href="/works"]:after {
+  content: "Фанфики";
+}
+
+.menu.dropdown-menu li a[href="/bookmarks"]:after {
+  content: "Закладки";
+}
+
+.menu.dropdown-menu li a[href="/tags"]:after {
+  content: "Теги";
+}
+
+.menu.dropdown-menu li a[href="/collections"]:after {
+  content: "Сборники";
+}
+
+.menu.dropdown-menu li a[href="/works/search"]:after {
+  content: "Фанфики";
+}
+
+.menu.dropdown-menu li a[href="/bookmarks/search"]:after {
+  content: "Закладки";
+}
+
+.menu.dropdown-menu li a[href="/tags/search"]:after {
+  content: "Теги";
+}
+
+.menu.dropdown-menu li a[href="/people/search"]:after {
+  content: "Люди";
+}
+
+/*Информация профиля*/
+.menu.dropdown-menu li a[href="/about"]:after {
+  content: "О нас";
+}
+
+.menu.dropdown-menu li a[href="/admin_posts"]:after {
+  content: "Новости";
+}
+
+.menu.dropdown-menu li a[href="/faq"]:after {
+  content: "FAQ";
+}
+
+.menu.dropdown-menu li a[href="/wrangling_guidelines"]:after {
+  content: "Руководство по правке тегов";
+}
+
+.menu.dropdown-menu li a[href="/donate"]:after {
+  content: "Пожертвования и волонтерство";
+}
+
+.menu.dropdown-menu li a[href^="/users/"]:after {
+  content: "Моя страница";
+}
+
+.menu.dropdown-menu li a[href$="/subscriptions"]:after {
+  content: "Мои подписки";
+}
+
+.menu.dropdown-menu li a[href$="/works"]:after {
+  content: "Мои работы";
+}
+
+.menu.dropdown-menu li a[href$="/bookmarks"]:after {
+  content: "Мои закладки";
+}
+
+.menu.dropdown-menu li a[href$="/collections"]:after {
+  content: "Мои сборники";
+}
+
+.menu.dropdown-menu li a[href$="/readings"]:after {
+  content: "Моя история";
+}
+
+.menu.dropdown-menu li a[href$="/preferences"]:after {
+  content: "Мои предпочтения";
+}
+
+.menu.dropdown-menu li a[href="/works/new"]:after {
+  content: "Новая работа";
+}
+
+.menu.dropdown-menu li a[href="/works/new?import=true"]:after {
+  content: "Импортировать работу";
+}
+
