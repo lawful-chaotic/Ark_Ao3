@@ -1,0 +1,93 @@
+/*Меню Найди любимые теги*/
+.browse.module li a {
+  visibility: hidden;
+  line-height: 1;
+}
+
+.browse.module li:before {
+  color: #900;
+  content: "\00BB";
+  position: relative;
+}
+
+.browse.module li a:before {
+  position: relative;
+  top: -1.4em;
+  left: 1em;
+  display: inline-block;
+  max-height: 1em;
+  background: #ffffff;
+  visibility: visible;
+  padding: 0.375em 0;
+  color: #666;
+}
+
+.browse.module li {
+  margin: 0;
+  max-height: 3.6em;
+  overflow: hidden;
+}
+
+.browse.module li:nth-of-type(odd) a:before {
+  padding-right: 0.375em;
+}
+
+.browse.module li a[href="/media"]:before {
+  content: "Все фандомы";
+}
+
+.browse.module li a[href="/media/Anime%20*a*%20Manga/fandoms"]:before {
+  content: "Аниме & Манга";
+}
+
+.browse.module li a[href="/media/Books%20*a*%20Literature/fandoms"]:before {
+  content: "Книги & Литература";
+}
+
+.browse.module
+  li
+  a[href="/media/Cartoons%20*a*%20Comics%20*a*%20Graphic%20Novels/fandoms"] {
+  padding-bottom: 1.7em !important;
+}
+
+.browse.module
+  li
+  a[href="/media/Cartoons%20*a*%20Comics%20*a*%20Graphic%20Novels/fandoms"]:before {
+  content: "Мультфильмы & Комиксы\a & Граф. новеллы";
+  white-space: pre-wrap;
+  padding-bottom: 1.7em !important;
+}
+
+.browse.module
+  li
+  a[href="/media/Celebrities%20*a*%20Real%20People/fandoms"]:before {
+  content: "Знаменитости & Настоящие люди";
+}
+
+.browse.module li a[href="/media/Movies/fandoms"]:before {
+  content: "Фильмы";
+}
+
+.browse.module li a[href="/media/Music%20*a*%20Bands/fandoms"]:before {
+  content: "Музыкальные группы";
+}
+
+.browse.module li a[href="/media/Other%20Media/fandoms"]:before {
+  content: "Другие медиа";
+}
+
+.browse.module li a[href="/media/Theater/fandoms"]:before {
+  content: "Театр";
+}
+
+.browse.module li a[href="/media/TV%20Shows/fandoms"]:before {
+  content: "Сериалы";
+}
+
+.browse.module li a[href="/media/Video%20Games/fandoms"]:before {
+  content: "Видеоигры";
+}
+
+.browse.module li a[href="/media/Uncategorized%20Fandoms/fandoms"]:before {
+  content: "Несортированные фандомы";
+}
