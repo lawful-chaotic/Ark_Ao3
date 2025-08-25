@@ -422,11 +422,11 @@ a[rel="nofollow"] {
 }
 
 /*Вложения меню*/
-.browse.module li a {
+.menu.dropdown-menu li a {
   visibility: hidden;
 }
 
-.browse.module li a:after {
+.menu.dropdown-menu li a:after {
   visibility: visible;
   background: transparent !important;
   display: block;
@@ -443,139 +443,153 @@ a[rel="nofollow"] {
 }
 /*Фандомы*/
 
-.browse.module li a[href="/media"]:after {
+.menu.dropdown-menu li a[href="/media"]:after {
   content: "Все фандомы";
 }
 
-.browse.module li a[href="/media/Anime%20*a*%20Manga/fandoms"]:after {
+.menu.dropdown-menu li a[href="/media/Anime%20*a*%20Manga/fandoms"]:after {
   content: "Аниме & Манга";
 }
 
-.browse.module li a[href="/media/Books%20*a*%20Literature/fandoms"]:after {
+.menu.dropdown-menu li a[href="/media/Books%20*a*%20Literature/fandoms"]:after {
   content: "Книги & Литература";
 }
 
-.browse.module
+.menu.dropdown-menu
+  li
+  a[href="/media/Cartoons%20*a*%20Comics%20*a*%20Graphic%20Novels/fandoms"] {
+  padding-bottom: 1.7em !important;
+}
+
+.menu.dropdown-menu
+  li
+  a[href="/media/Cartoons%20*a*%20Comics%20*a*%20Graphic%20Novels/fandoms"]:after {
+  content: "Мультфильмы & Комиксы\a & Граф. новеллы";
+  white-space: pre-wrap;
+  padding-bottom: 1.7em !important;
+}
+
+.menu.dropdown-menu
   li
   a[href="/media/Celebrities%20*a*%20Real%20People/fandoms"]:after {
   content: "Знаменитости & Настоящие люди";
 }
 
-.browse.module li a[href="/media/Movies/fandoms"]:after {
+.menu.dropdown-menu li a[href="/media/Movies/fandoms"]:after {
   content: "Фильмы";
 }
 
-.browse.module li a[href="/media/Music%20*a*%20Bands/fandoms"]:after {
+.menu.dropdown-menu li a[href="/media/Music%20*a*%20Bands/fandoms"]:after {
   content: "Музыкальные группы";
 }
 
-.browse.module li a[href="/media/Other%20Media/fandoms"]:after {
+.menu.dropdown-menu li a[href="/media/Other%20Media/fandoms"]:after {
   content: "Другие медиа";
 }
 
-.browse.module li a[href="/media/Theater/fandoms"]:after {
+.menu.dropdown-menu li a[href="/media/Theater/fandoms"]:after {
   content: "Театр";
 }
 
-.browse.module li a[href="/media/TV%20Shows/fandoms"]:after {
+.menu.dropdown-menu li a[href="/media/TV%20Shows/fandoms"]:after {
   content: "Сериалы";
 }
 
-.browse.module li a[href="/media/Video%20Games/fandoms"]:after {
+.menu.dropdown-menu li a[href="/media/Video%20Games/fandoms"]:after {
   content: "Видеоигры";
 }
 
-.browse.module li a[href="/media/Uncategorized%20Fandoms/fandoms"]:after {
+.menu.dropdown-menu li a[href="/media/Uncategorized%20Fandoms/fandoms"]:after {
   content: "Несортированные фандомы";
 }
 
 /*Обзор и Поиск*/
 
-.browse.module li a[href="/works"]:after {
+.menu.dropdown-menu li a[href="/works"]:after {
   content: "Фанфики";
 }
 
-.browse.module li a[href="/bookmarks"]:after {
+.menu.dropdown-menu li a[href="/bookmarks"]:after {
   content: "Закладки";
 }
 
-.browse.module li a[href="/tags"]:after {
+.menu.dropdown-menu li a[href="/tags"]:after {
   content: "Теги";
 }
 
-.browse.module li a[href="/collections"]:after {
+.menu.dropdown-menu li a[href="/collections"]:after {
   content: "Сборники";
 }
 
-.browse.module li a[href="/works/search"]:after {
+.menu.dropdown-menu li a[href="/works/search"]:after {
   content: "Фанфики";
 }
 
-.browse.module li a[href="/bookmarks/search"]:after {
+.menu.dropdown-menu li a[href="/bookmarks/search"]:after {
   content: "Закладки";
 }
 
-.browse.module li a[href="/tags/search"]:after {
+.menu.dropdown-menu li a[href="/tags/search"]:after {
   content: "Теги";
 }
 
-.browse.module li a[href="/people/search"]:after {
+.menu.dropdown-menu li a[href="/people/search"]:after {
   content: "Люди";
 }
 
 /*Информация профиля*/
-.browse.module li a[href="/about"]:after {
+.menu.dropdown-menu li a[href="/about"]:after {
   content: "О нас";
 }
 
-.browse.module li a[href="/admin_posts"]:after {
+.menu.dropdown-menu li a[href="/admin_posts"]:after {
   content: "Новости";
 }
 
-.browse.module li a[href="/faq"]:after {
+.menu.dropdown-menu li a[href="/faq"]:after {
   content: "FAQ";
 }
 
-.browse.module li a[href="/wrangling_guidelines"]:after {
+.menu.dropdown-menu li a[href="/wrangling_guidelines"]:after {
   content: "Руководство по правке тегов";
 }
 
-.browse.module li a[href="/donate"]:after {
+.menu.dropdown-menu li a[href="/donate"]:after {
   content: "Пожертвования и волонтерство";
 }
 
-.browse.module li a[href^="/users/"]:after {
+.menu.dropdown-menu li a[href^="/users/"]:after {
   content: "Моя страница";
 }
 
-.browse.module li a[href$="/subscriptions"]:after {
+.menu.dropdown-menu li a[href$="/subscriptions"]:after {
   content: "Мои подписки";
 }
 
-.browse.module li a[href$="/works"]:after {
+.menu.dropdown-menu li a[href$="/works"]:after {
   content: "Мои работы";
 }
 
-.browse.module li a[href$="/bookmarks"]:after {
+.menu.dropdown-menu li a[href$="/bookmarks"]:after {
   content: "Мои закладки";
 }
 
-.browse.module li a[href$="/collections"]:after {
+.menu.dropdown-menu li a[href$="/collections"]:after {
   content: "Мои сборники";
 }
 
-.browse.module li a[href$="/readings"]:after {
+.menu.dropdown-menu li a[href$="/readings"]:after {
   content: "Моя история";
 }
 
-.browse.module li a[href$="/preferences"]:after {
+.menu.dropdown-menu li a[href$="/preferences"]:after {
   content: "Мои предпочтения";
 }
 
-.browse.module li a[href="/works/new"]:after {
+.menu.dropdown-menu li a[href="/works/new"]:after {
   content: "Новая работа";
 }
 
-.browse.module li a[href="/works/new?import=true"]:after {
+.menu.dropdown-menu li a[href="/works/new?import=true"]:after {
   content: "Импортировать работу";
 }
