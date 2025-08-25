@@ -457,14 +457,6 @@ a[rel="nofollow"] {
 
 .browse.module
   li
-  a[href="/media/Cartoons%20*a*%20Comics%20*a*%20Graphic%20Novels/fandoms"]:after {
-  content: "Мультфильмы & Комиксы\a & Граф. новеллы";
-  white-space: pre-wrap;
-  padding-bottom: 1.7em !important;
-}
-
-.browse.module
-  li
   a[href="/media/Celebrities%20*a*%20Real%20People/fandoms"]:after {
   content: "Знаменитости & Настоящие люди";
 }
